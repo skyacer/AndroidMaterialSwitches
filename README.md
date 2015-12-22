@@ -2,7 +2,9 @@
 The Switches of Android Material Design,in Android 4.0+.
 
 #How it is looks like?
-/Users/Apple/AndroidMaterialSwitches/ScreenShoot/CheckBox.gif
+![CheckBox](/ScreenShoot/CheckBox.gif) 
+
+![Swich1](/ScreenShoot/Swich1.gif) 
 
 /Users/Apple/AndroidMaterialSwitches/ScreenShoot/CheckBox.gif
 
