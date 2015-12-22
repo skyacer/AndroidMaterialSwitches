@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/AndroidMaterialSwitches.iml" filepath="$PROJECT_DIR$/AndroidMaterialSwitches.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Materialswitches/MaterialSwitches.iml" filepath="$PROJECT_DIR$/Materialswitches/MaterialSwitches.iml" />
+      <module fileurl="file://$PROJECT_DIR$/MaterialSwitchesDemo/MaterialSwitchesDemo.iml" filepath="$PROJECT_DIR$/MaterialSwitchesDemo/MaterialSwitchesDemo.iml" />
+    </modules>
+  </component>
+</project>
