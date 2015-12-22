@@ -1,6 +1,11 @@
 # AndroidMaterialSwitches
 The Switches of Android Material Design,in Android 4.0+.
 
+#How it is looks like?
+/Users/Apple/AndroidMaterialSwitches/ScreenShoot/CheckBox.gif
+
+/Users/Apple/AndroidMaterialSwitches/ScreenShoot/CheckBox.gif
+
 #About me
 if you have any question,or any suggestion,you can contact me [skyacer.me@gmail.com](mailto:skyacer.me@gmail.com)
 
