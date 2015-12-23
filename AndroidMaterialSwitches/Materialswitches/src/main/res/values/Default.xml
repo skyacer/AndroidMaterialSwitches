@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- CheckBox Default -->
+    <dimen name="checkbox_width">50dp</dimen>
+    <dimen name="checkbox_height">50dp</dimen>
+    <dimen name="checkbox_corner_radius">2dp</dimen>
+    <dimen name="checkbox_thumb_circle_size">20dp</dimen>
+    <dimen name="checkbox_border_width">2dp</dimen>
+    <dimen name="checkbox_tick_width">2dp</dimen>
+    <dimen name="checkbox_thumb_circle_radius">25dp</dimen>
+    <dimen name="checkbox_tick_left_right_padding">3dp</dimen>
+    <dimen name="checkbox_tick_top_padding">4dp</dimen>
+    <dimen name="checkbo_tick_bottom_padding">5dp</dimen>
+
+    <color name="checkbox_checked_color">#55b03d</color>
+    <color name="checkbox_unchecked_color">#6d6d6d</color>
+    <color name="checkbox_tick_color">#eeeeee</color>
+
+</resources>

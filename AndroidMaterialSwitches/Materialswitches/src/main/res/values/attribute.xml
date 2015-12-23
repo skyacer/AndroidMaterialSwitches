@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- CheckBox Attribute -->
+    <declare-styleable name="CheckBox">
+        <attr name="checkbox_unchecked_color" format="color"/>
+        <attr name="checkbox_checked_color" format="color"/>
+    </declare-styleable>
+
+
+</resources>
