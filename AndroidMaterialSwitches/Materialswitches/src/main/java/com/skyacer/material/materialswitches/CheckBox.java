@@ -2,6 +2,8 @@ package com.skyacer.material.materialswitches;
 
 import android.content.Context;
 import android.content.res.TypedArray;
+import android.graphics.Color;
+import android.graphics.RectF;
 import android.support.v4.content.ContextCompat;
 import android.util.AttributeSet;
 import android.widget.CompoundButton;
@@ -54,7 +56,55 @@ public class CheckBox extends CompoundButton {
         mTickLeftRightPadding = getResources().getDimensionPixelSize(R.dimen.checkbox_tick_left_right_padding);
         mTickTopPadding = getResources().getDimensionPixelSize(R.dimen.checkbox_tick_top_padding);
         mTickBottomPadding = getResources().getDimensionPixelSize(R.dimen.checkbo_tick_bottom_padding);
+    }
 
+    @Override
+    protected void onMeasure(int widthMeasureSpec, int heightMeasureSpec) {
+        int size;
+        int widthSpecMode = MeasureSpec.getMode(widthMeasureSpec);
+        int widthSpecSize = MeasureSpec.getSize(widthMeasureSpec);
+        if(widthSpecMode == MeasureSpec.EXACTLY){
+            if (widthSpecSize < mCheckBoxWidth){
+                size = mCheckBoxWidth;
+            } else {
+                size = widthSpecSize;
+            }
+        }   else {
+            size = mCheckBoxWidth;
+        }
+
+        widthMeasureSpec = MeasureSpec.makeMeasureSpec(size, MeasureSpec.EXACTLY);
+        int heightSpecMode = MeasureSpec.getMode(heightMeasureSpec);
+        int heightSpecSize = MeasureSpec.getSize(heightMeasureSpec);
+        if (heightSpecMode == MeasureSpec.EXACTLY){
+            if (heightSpecSize < mCheckBoxHeight){
+                size = mCheckBoxHeight;
+            }else {
+                size = heightSpecSize;
+            }
+        }else {
+            size = mCheckBoxHeight;
+        }
+
+        heightMeasureSpec = MeasureSpec.makeMeasureSpec(size, MeasureSpec.EXACTLY);
+        super.onMeasure(widthMeasureSpec, heightMeasureSpec);
+    }
+
+    private RectF getRectFrame(){
+        RectF rectF = new RectF();
+        rectF.left = (getWidth() - mThumbCircleSize) / 2;
+        rectF.top = (getHeight() - mThumbCircleSize) / 2;
+        rectF.right = (getWidth() - mThumbCircleSize) / 2 + mThumbCircleSize;
+
+        return rectF;
+    }
+
+    private int thumbCircleColor(int color){
+        int alpha = Math.round(Color.alpha(color) * 0.3f);
+        int red = Color.red(color);
+        int green = Color.green(color);
+        int blue = Color.blue(color);
+        return Color.argb(alpha,red,green,blue);
     }
 
 
